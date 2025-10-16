@@ -68,16 +68,3 @@ class Maze:
     def goal_test(self, p:Pos) -> bool:
         return p == self.goal
     
-# Exemplo de uso
-if __name__ == "__main__":
-    grid = [
-        list("S...."),
-        list(".###."),
-        list("..#.."),
-        list(".###."),
-        list("....G"),
-    ]
-    
-    mz = Maze(grid)
-    s = mz.start
-    print("Ações válidas em S:", mz.actions(s))

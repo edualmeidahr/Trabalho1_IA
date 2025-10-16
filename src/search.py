@@ -1,13 +1,133 @@
-#Algoritmo BFS
+#Implementação das buscas (BFS,DFS,A*, Gulosa pelo menor custo)
+
+import heapq
+from typing import Dict , List, Tuple, Optional
+
+from src.maze import Maze, Pos
+from src.heuristics import manhattan_distance
+
+
+# Função para reconstruir o caminho do início ao objetivo
+def reconstruct_path(came_from: Dict[Pos, Optional[Pos]], start: Pos, goal: Pos):
+    
+    path = []
+    current = goal
+    while current is not None:
+        path.append(current)
+        current = came_from.get(current)
+    path.reverse()
+    return path
 
 
 
-#Algoritmo DFS
+def a_star_search(maze: Maze ):
+
+    start_node = maze.start
+    goal_node = maze.goal
+
+
+    nodes_expanded = 0
+    max_memory_usage = 0
+
+
+    frontier = []
+
+    heapq.heappush(frontier, (0, start_node))
+
+
+    came_from: Dict[Pos, Pos] = {start_node: None}
+
+
+    g_cost: Dict[Pos, int] = {start_node: 0}
+
+    while frontier:
+
+        current_memory = len(frontier) + len(g_cost)
+        if current_memory > max_memory_usage:
+            max_memory_usage = current_memory
+
+        
+        _, current_node = heapq.heappop(frontier)
+        nodes_expanded += 1
+
+
+        if maze.goal_test(current_node):
+            path = reconstruct_path(came_from, start_node, goal_node)
+            metrics = {
+                "nodes_expanded": nodes_expanded,
+                "max_memory_usage": max_memory_usage
+            }
+            return path, metrics
+        
+        for action in maze.actions(current_node):
+
+            neighbor_node = maze.result(current_node, action)
+
+            # Custo do caminho até o nó vizinho
+            step_cost = maze.step_cost(current_node, action, neighbor_node)
+            g_cost_tentative = g_cost[current_node] + step_cost
+            
+            # Se o nó vizinho não foi visitado ou se encontramos um caminho mais barato
+            if neighbor_node not in g_cost or g_cost_tentative < g_cost[neighbor_node]:
+
+                came_from[neighbor_node] = current_node
+                g_cost[neighbor_node] = g_cost_tentative
+
+                f_cost = g_cost_tentative + manhattan_distance(neighbor_node, goal_node)
+                heapq.heappush(frontier, (f_cost, neighbor_node))
+        
+    metrics = {
+        "nodes_expanded": nodes_expanded,
+        "max_memory_usage": max_memory_usage
+    }
+
+    return None, metrics
 
 
 
-#Algoritmo A*
+def dfs( maze: Maze):
+
+    start_node = maze.start
+    goal_node = maze.goal
+
+    nodes_expanded = 0
+    max_memory_usage = 0
+
+    frontier: List[Pos] = [start_node]
+
+    came_from: Dict[Pos, Optional[Pos]] = {start_node: None}
+
+    while frontier:
+
+        current_memory = len(frontier) + len(came_from)
+        
+        if current_memory > max_memory_usage:
+            max_memory_usage = current_memory
+
+        current_node = frontier.pop()
+        nodes_expanded += 1
+
+        if maze.goal_test(current_node):
+            path = reconstruct_path(came_from, start_node, goal_node)
+            metrics = {
+                "nodes_expanded": nodes_expanded,
+                "max_memory_usage": max_memory_usage
+            }
+            return path, metrics
+        
+        for action in maze.actions(current_node):
+            neighbor_node = maze.result(current_node, action)
+
+            if neighbor_node not in came_from:
+                came_from[neighbor_node] = current_node
+                frontier.append(neighbor_node)
+        
+    metrics = {
+        "nodes_expanded": nodes_expanded,
+        "max_memory_usage": max_memory_usage
+    }  
+
+    return None, metrics
 
 
 
-#Algoritmo Guloso
