@@ -1,23 +1,26 @@
+#!/usr/bin/env python3
+"""
+Script para testar todos os algoritmos de busca em múltiplos labirintos
+"""
+
 import time 
 from datetime import datetime
 from typing import List
+import os
+import glob
 
-
-from src.search import a_star_search, dfs
+from src.search import a_star_search, dfs, bfs, greedy_search
 from src.maze import Maze, Grid
-
 
 ALGORITHMS_TO_RUN = {
     "Depth-First Search (DFS)": dfs,
+    "Breadth-First Search (BFS)": bfs,
     "A* Search (A-Star)": a_star_search,
-    # Adicione  buscas aqui quando estiverem prontas
-    # "Breadth-First Search (BFS)": bfs,
-    # "Greedy Best-First Search": greedy_search,
+    "Greedy Best-First Search": greedy_search,
 }
 
 def read_mazes_from_file(input_file: str) -> List[Grid]:
-
-
+    """Lê labirintos de um arquivo"""
     mazes = []
     current_maze = []
     try:
@@ -31,7 +34,7 @@ def read_mazes_from_file(input_file: str) -> List[Grid]:
                 else:
                     current_maze.append(list(stripped_line))
             
-            
+            # Adiciona o último labirinto se não terminou com linha em branco
             if current_maze:
                 mazes.append(current_maze)
         return mazes
@@ -39,26 +42,68 @@ def read_mazes_from_file(input_file: str) -> List[Grid]:
         print(f"Erro: O arquivo de entrada '{input_file}' não foi encontrado.")
         return []
 
-def save_results(input_file, all_experiments_data, output_file):
-    
+def save_results(all_experiments_data, output_file):
+    """Salva os resultados em um arquivo de relatório"""
     try:
         with open(output_file, 'w', encoding='utf-8') as file:
-            file.write("="*60 + "\n")
-            file.write("        RELATÓRIO DE DESEMPENHO DOS ALGORITMOS DE BUSCA\n")
-            file.write("=" * 60 + "\n\n")
-            file.write(f"Arquivo de Entrada: {input_file}\n")
+            file.write("="*80 + "\n")
+            file.write("        RELATÓRIO COMPARATIVO DOS ALGORITMOS DE BUSCA\n")
+            file.write("="*80 + "\n\n")
             file.write(f"Data da Execução: {datetime.now().strftime('%d/%m/%Y %H:%M:%S')}\n")
+            file.write(f"Total de Labirintos Testados: {len(all_experiments_data)}\n\n")
 
-            # Itera sobre os resultados de cada mapa
+            # Resumo geral
+            file.write("="*50 + " RESUMO GERAL " + "="*50 + "\n\n")
+            
+            # Coleta estatísticas gerais
+            algorithm_stats = {}
+            for algorithm_name in ALGORITHMS_TO_RUN.keys():
+                algorithm_stats[algorithm_name] = {
+                    'total_time': 0,
+                    'total_nodes': 0,
+                    'total_memory': 0,
+                    'solutions_found': 0,
+                    'total_cost': 0,
+                    'mazes_tested': 0
+                }
+
             for maze_number, results_for_maze in all_experiments_data:
-                file.write("\n" + "="*20 + f" ANÁLISE DO MAPA {maze_number} " + "="*20 + "\n\n")
+                for result in results_for_maze:
+                    alg_name = result['algorithm']
+                    algorithm_stats[alg_name]['mazes_tested'] += 1
+                    algorithm_stats[alg_name]['total_time'] += result['time']
+                    algorithm_stats[alg_name]['total_nodes'] += result['metrics']['nodes_expanded']
+                    algorithm_stats[alg_name]['total_memory'] += result['metrics']['max_memory_usage']
+                    
+                    if result['solution_found']:
+                        algorithm_stats[alg_name]['solutions_found'] += 1
+                        algorithm_stats[alg_name]['total_cost'] += result['cost']
+
+            # Escreve estatísticas gerais
+            file.write(f"{'Algoritmo':<30} {'Sucessos':<10} {'Tempo Médio':<15} {'Nós Médios':<12} {'Memória Média':<15} {'Custo Médio':<12}\n")
+            file.write("-" * 100 + "\n")
+            
+            for alg_name, stats in algorithm_stats.items():
+                if stats['mazes_tested'] > 0:
+                    success_rate = (stats['solutions_found'] / stats['mazes_tested']) * 100
+                    avg_time = stats['total_time'] / stats['mazes_tested']
+                    avg_nodes = stats['total_nodes'] / stats['mazes_tested']
+                    avg_memory = stats['total_memory'] / stats['mazes_tested']
+                    avg_cost = stats['total_cost'] / stats['solutions_found'] if stats['solutions_found'] > 0 else 0
+                    
+                    file.write(f"{alg_name:<30} {success_rate:>6.1f}% {avg_time:>12.6f}s {avg_nodes:>10.1f} {avg_memory:>13.1f} {avg_cost:>10.1f}\n")
+
+            file.write("\n" + "="*80 + "\n\n")
+
+            # Detalhes por labirinto
+            for maze_number, results_for_maze in all_experiments_data:
+                file.write("="*20 + f" ANÁLISE DO LABIRINTO {maze_number} " + "="*20 + "\n\n")
 
                 for result in results_for_maze: 
-                    file.write('-'*40 + "\n")
+                    file.write('-'*50 + "\n")
                     file.write(f"Algoritmo: {result['algorithm']}\n")
-                    file.write("-"*40 + "\n")
+                    file.write("-"*50 + "\n")
 
-                    
                     if result['solution_found']:
                         file.write("Solução Encontrada: Sim\n")
                         file.write(f"Custo do Caminho: {result['cost']}\n")
@@ -66,66 +111,86 @@ def save_results(input_file, all_experiments_data, output_file):
                         file.write("Solução Encontrada: Não\n")
 
                     file.write(f"Tempo de Execução (s): {result['time']:.6f}\n")
-
-                    for key, value in result['metrics'].items():
-                        readable_key = key.replace('_', ' ').capitalize()
-                        file.write(f"{readable_key}: {value}\n")
+                    file.write(f"Nós Expandidos: {result['metrics']['nodes_expanded']}\n")
+                    file.write(f"Uso Máximo de Memória: {result['metrics']['max_memory_usage']}\n")
                     file.write("\n")
+                    
         print(f"Resultados salvos com sucesso em '{output_file}'")
     except Exception as e:
         print(f"Erro ao salvar resultados: {e}")
 
-
 def main():
+    """Função principal que testa todos os labirintos"""
     
-    input_file = 'data/labirinto.txt'
-    output_file = 'data/relatorio_resultados.txt'
-
+    # Encontra todos os arquivos de labirinto
+    maze_files = glob.glob('data/labirinto*.txt')
+    maze_files.sort()  # Ordena para garantir ordem consistente
     
-    list_of_grids = read_mazes_from_file(input_file)
-    if not list_of_grids:
-        print("Nenhum labirinto encontrado no arquivo. Encerrando.")
+    if not maze_files:
+        print("Nenhum arquivo de labirinto encontrado em 'data/'. Encerrando.")
         return
     
-    print(f"{len(list_of_grids)} labirintos carregados com sucesso de '{input_file}'.")
-
+    print(f"Encontrados {len(maze_files)} arquivos de labirinto:")
+    for file in maze_files:
+        print(f"  - {file}")
     
     all_experiments_results = []
+    total_mazes = 0
     
-    
-    for i, grid in enumerate(list_of_grids):
-        maze_number = i + 1
-        print(f"\n--- Processando Mapa {maze_number} ---")
+    # Processa cada arquivo de labirinto
+    for maze_file in maze_files:
+        print(f"\n--- Processando {maze_file} ---")
         
-        try:
-            maze_problem = Maze(grid)
-        except Exception as e:
-            print(f"Erro ao criar o labirinto para o Mapa {maze_number}: {e}")
-            continue # Pula para o próximo labirinto
-
-        # Armazena os resultados apenas para o labirinto atual
-        current_maze_results = []
+        list_of_grids = read_mazes_from_file(maze_file)
+        if not list_of_grids:
+            print(f"Nenhum labirinto encontrado em {maze_file}. Pulando.")
+            continue
         
-        for name, search_function in ALGORITHMS_TO_RUN.items():
-            print(f"  -> Executando {name}...")
-            start_time = time.time()
-            path, metrics = search_function(maze_problem)
-            end_time = time.time()
+        print(f"{len(list_of_grids)} labirinto(s) carregado(s) de '{maze_file}'.")
+        
+        # Processa cada labirinto do arquivo
+        for i, grid in enumerate(list_of_grids):
+            maze_number = total_mazes + i + 1
+            print(f"\n  -> Processando Labirinto {maze_number}...")
             
-            result_data = {
-                "algorithm": name,
-                "solution_found": path is not None,
-                "cost": len(path) - 1 if path else "N/A",
-                "time": end_time - start_time,
-                "metrics": metrics
-            }
-            current_maze_results.append(result_data)
-        
-        
-        all_experiments_results.append((maze_number, current_maze_results))
+            try:
+                maze_problem = Maze(grid)
+                print(f"     Dimensões: {maze_problem.H}x{maze_problem.W}")
+                print(f"     Start: {maze_problem.start}, Goal: {maze_problem.goal}")
+            except Exception as e:
+                print(f"     Erro ao criar o labirinto: {e}")
+                continue
 
-   
-    save_results(input_file, all_experiments_results, output_file)
+            # Armazena os resultados para o labirinto atual
+            current_maze_results = []
+            
+            for name, search_function in ALGORITHMS_TO_RUN.items():
+                print(f"     -> Executando {name}...")
+             
+                    "time": end_time - start_time,
+                    "metrics": metrics
+                }
+                current_maze_results.append(result_data)
+            
+            all_experiments_results.append((maze_number, current_maze_results))
+        
+        total_mazes += len(list_of_grids)
+    
+    print(f"\n=== TESTE CONCLUÍDO ===")
+    print(f"Total de labirintos processados: {total_mazes}")
+    print(f"Total de algoritmos testados: {len(ALGORITHMS_TO_RUN)}")
+    print(f"Total de experimentos: {total_mazes * len(ALGORITHMS_TO_RUN)}")
+    
+    # Salva os resultados
+    output_file = 'data/relatorio_completo.txt'
+    save_results(all_experiments_results, output_file)
 
-if __name__ == "__main__":
+if __name__ == "__main__"   start_time = time.time()
+                path, metrics = search_function(maze_problem)
+                end_time = time.time()
+                
+                result_data = {
+                    "algorithm": name,
+                    "solution_found": path is not None,
+                    "cost": len(path) - 1 if path else "N/A",:
     main()
