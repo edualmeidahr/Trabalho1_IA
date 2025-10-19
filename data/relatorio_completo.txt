@@ -2,142 +2,110 @@
         RELATÓRIO COMPARATIVO DOS ALGORITMOS DE BUSCA
 ================================================================================
 
-Data da Execução: 16/10/2025 21:52:46
+Data da Execução: 19/10/2025 11:01:47
 Total de Labirintos Testados: 7
 
-================================================== RESUMO GERAL ==================================================
+================================== RESUMO GERAL ==================================
 
 Algoritmo                      Sucessos   Tempo Médio     Nós Médios   Memória Média   Custo Médio 
 ----------------------------------------------------------------------------------------------------
-Depth-First Search (DFS)         85.7%     0.000100s       24.7          33.0       18.5
-Breadth-First Search (BFS)       85.7%     0.000133s       31.4          34.1       15.8
-A* Search (A-Star)               85.7%     0.000160s       29.1          35.0       15.8
-Greedy Best-First Search         85.7%     0.000075s       17.3          27.1       16.5
+Depth-First Search (DFS)         85.7%     0.000252s       24.7          33.0       18.5
+Breadth-First Search (BFS)       85.7%     0.000279s       31.4          34.1       15.8
+A* Search (A-Star)               85.7%     0.000349s       29.1          35.0       15.8
+Greedy Best-First Search         85.7%     0.000164s       17.3          27.1       16.5
 
 ================================================================================
 
 ==================== ANÁLISE DO LABIRINTO 1 ====================
 
+Gráficos de resultados salvos em: data/mapa_1_*.png
+
 --------------------------------------------------
 Algoritmo: Depth-First Search (DFS)
 --------------------------------------------------
 Solução Encontrada: Sim
-Custo do Caminho: 11
-Tempo de Execução (s): 0.000132
-Nós Expandidos: 31
-Uso Máximo de Memória: 36
+Custo do Caminho: 2
+Tempo de Execução (s): 0.000036
+Nós Expandidos: 3
+Uso Máximo de Memória: 4
 
 --------------------------------------------------
 Algoritmo: Breadth-First Search (BFS)
 --------------------------------------------------
 Solução Encontrada: Sim
-Custo do Caminho: 9
-Tempo de Execução (s): 0.000093
-Nós Expandidos: 23
-Uso Máximo de Memória: 28
+Custo do Caminho: 2
+Tempo de Execução (s): 0.000021
+Nós Expandidos: 3
+Uso Máximo de Memória: 4
 
 --------------------------------------------------
 Algoritmo: A* Search (A-Star)
 --------------------------------------------------
 Solução Encontrada: Sim
-Custo do Caminho: 9
-Tempo de Execução (s): 0.000126
-Nós Expandidos: 19
-Uso Máximo de Memória: 24
+Custo do Caminho: 2
+Tempo de Execução (s): 0.000033
+Nós Expandidos: 3
+Uso Máximo de Memória: 4
 
 --------------------------------------------------
 Algoritmo: Greedy Best-First Search
 --------------------------------------------------
 Solução Encontrada: Sim
-Custo do Caminho: 11
-Tempo de Execução (s): 0.000072
-Nós Expandidos: 15
-Uso Máximo de Memória: 22
+Custo do Caminho: 2
+Tempo de Execução (s): 0.000021
+Nós Expandidos: 3
+Uso Máximo de Memória: 4
 
 ==================== ANÁLISE DO LABIRINTO 2 ====================
 
+Gráficos de resultados salvos em: data/mapa_2_*.png
+
 --------------------------------------------------
 Algoritmo: Depth-First Search (DFS)
 --------------------------------------------------
 Solução Encontrada: Sim
-Custo do Caminho: 2
-Tempo de Execução (s): 0.000013
-Nós Expandidos: 3
-Uso Máximo de Memória: 4
+Custo do Caminho: 4
+Tempo de Execução (s): 0.000108
+Nós Expandidos: 5
+Uso Máximo de Memória: 10
 
 --------------------------------------------------
 Algoritmo: Breadth-First Search (BFS)
 --------------------------------------------------
 Solução Encontrada: Sim
-Custo do Caminho: 2
-Tempo de Execução (s): 0.000010
-Nós Expandidos: 3
-Uso Máximo de Memória: 4
+Custo do Caminho: 4
+Tempo de Execução (s): 0.000123
+Nós Expandidos: 7
+Uso Máximo de Memória: 9
 
 --------------------------------------------------
 Algoritmo: A* Search (A-Star)
 --------------------------------------------------
 Solução Encontrada: Sim
-Custo do Caminho: 2
-Tempo de Execução (s): 0.000015
-Nós Expandidos: 3
-Uso Máximo de Memória: 4
+Custo do Caminho: 4
+Tempo de Execução (s): 0.000154
+Nós Expandidos: 7
+Uso Máximo de Memória: 9
 
 --------------------------------------------------
 Algoritmo: Greedy Best-First Search
 --------------------------------------------------
 Solução Encontrada: Sim
-Custo do Caminho: 2
-Tempo de Execução (s): 0.000011
-Nós Expandidos: 3
-Uso Máximo de Memória: 4
+Custo do Caminho: 4
+Tempo de Execução (s): 0.000093
+Nós Expandidos: 5
+Uso Máximo de Memória: 10
 
 ==================== ANÁLISE DO LABIRINTO 3 ====================
 
---------------------------------------------------
-Algoritmo: Depth-First Search (DFS)
---------------------------------------------------
-Solução Encontrada: Sim
-Custo do Caminho: 4
-Tempo de Execução (s): 0.000023
-Nós Expandidos: 5
-Uso Máximo de Memória: 10
-
---------------------------------------------------
-Algoritmo: Breadth-First Search (BFS)
---------------------------------------------------
-Solução Encontrada: Sim
-Custo do Caminho: 4
-Tempo de Execução (s): 0.000032
-Nós Expandidos: 7
-Uso Máximo de Memória: 9
-
---------------------------------------------------
-Algoritmo: A* Search (A-Star)
---------------------------------------------------
-Solução Encontrada: Sim
-Custo do Caminho: 4
-Tempo de Execução (s): 0.000037
-Nós Expandidos: 7
-Uso Máximo de Memória: 9
-
---------------------------------------------------
-Algoritmo: Greedy Best-First Search
---------------------------------------------------
-Solução Encontrada: Sim
-Custo do Caminho: 4
-Tempo de Execução (s): 0.000024
-Nós Expandidos: 5
-Uso Máximo de Memória: 10
-
-==================== ANÁLISE DO LABIRINTO 4 ====================
+Gráficos de resultados salvos em: data/mapa_3_*.png
 
 --------------------------------------------------
 Algoritmo: Depth-First Search (DFS)
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 11
-Tempo de Execução (s): 0.000123
+Tempo de Execução (s): 0.000285
 Nós Expandidos: 31
 Uso Máximo de Memória: 36
 
@@ -146,7 +114,7 @@ Algoritmo: Breadth-First Search (BFS)
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 9
-Tempo de Execução (s): 0.000091
+Tempo de Execução (s): 0.000215
 Nós Expandidos: 23
 Uso Máximo de Memória: 28
 
@@ -155,7 +123,7 @@ Algoritmo: A* Search (A-Star)
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 9
-Tempo de Execução (s): 0.000099
+Tempo de Execução (s): 0.000227
 Nós Expandidos: 19
 Uso Máximo de Memória: 24
 
@@ -164,18 +132,20 @@ Algoritmo: Greedy Best-First Search
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 11
-Tempo de Execução (s): 0.000076
+Tempo de Execução (s): 0.000147
 Nós Expandidos: 15
 Uso Máximo de Memória: 22
 
-==================== ANÁLISE DO LABIRINTO 5 ====================
+==================== ANÁLISE DO LABIRINTO 4 ====================
+
+Gráficos de resultados salvos em: data/mapa_4_*.png
 
 --------------------------------------------------
 Algoritmo: Depth-First Search (DFS)
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 53
-Tempo de Execução (s): 0.000197
+Tempo de Execução (s): 0.000463
 Nós Expandidos: 54
 Uso Máximo de Memória: 55
 
@@ -184,7 +154,7 @@ Algoritmo: Breadth-First Search (BFS)
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 53
-Tempo de Execução (s): 0.000210
+Tempo de Execução (s): 0.000396
 Nós Expandidos: 54
 Uso Máximo de Memória: 55
 
@@ -193,7 +163,7 @@ Algoritmo: A* Search (A-Star)
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 53
-Tempo de Execução (s): 0.000246
+Tempo de Execução (s): 0.000509
 Nós Expandidos: 54
 Uso Máximo de Memória: 55
 
@@ -202,18 +172,20 @@ Algoritmo: Greedy Best-First Search
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 53
-Tempo de Execução (s): 0.000219
+Tempo de Execução (s): 0.000412
 Nós Expandidos: 54
 Uso Máximo de Memória: 55
 
-==================== ANÁLISE DO LABIRINTO 6 ====================
+==================== ANÁLISE DO LABIRINTO 5 ====================
+
+Gráficos de resultados salvos em: data/mapa_5_*.png
 
 --------------------------------------------------
 Algoritmo: Depth-First Search (DFS)
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 30
-Tempo de Execução (s): 0.000177
+Tempo de Execução (s): 0.000378
 Nós Expandidos: 39
 Uso Máximo de Memória: 79
 
@@ -222,7 +194,7 @@ Algoritmo: Breadth-First Search (BFS)
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 18
-Tempo de Execução (s): 0.000463
+Tempo de Execução (s): 0.000942
 Nós Expandidos: 100
 Uso Máximo de Memória: 104
 
@@ -231,7 +203,7 @@ Algoritmo: A* Search (A-Star)
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 18
-Tempo de Execução (s): 0.000557
+Tempo de Execução (s): 0.001150
 Nós Expandidos: 92
 Uso Máximo de Memória: 118
 
@@ -240,17 +212,19 @@ Algoritmo: Greedy Best-First Search
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 18
-Tempo de Execução (s): 0.000088
+Tempo de Execução (s): 0.000216
 Nós Expandidos: 19
 Uso Máximo de Memória: 66
 
-==================== ANÁLISE DO LABIRINTO 8 ====================
+==================== ANÁLISE DO LABIRINTO 7 ====================
+
+Gráficos de resultados salvos em: data/mapa_7_*.png
 
 --------------------------------------------------
 Algoritmo: Depth-First Search (DFS)
 --------------------------------------------------
 Solução Encontrada: Não
-Tempo de Execução (s): 0.000033
+Tempo de Execução (s): 0.000104
 Nós Expandidos: 10
 Uso Máximo de Memória: 11
 
@@ -258,7 +232,7 @@ Uso Máximo de Memória: 11
 Algoritmo: Breadth-First Search (BFS)
 --------------------------------------------------
 Solução Encontrada: Não
-Tempo de Execução (s): 0.000030
+Tempo de Execução (s): 0.000080
 Nós Expandidos: 10
 Uso Máximo de Memória: 11
 
@@ -266,7 +240,7 @@ Uso Máximo de Memória: 11
 Algoritmo: A* Search (A-Star)
 --------------------------------------------------
 Solução Encontrada: Não
-Tempo de Execução (s): 0.000038
+Tempo de Execução (s): 0.000108
 Nós Expandidos: 10
 Uso Máximo de Memória: 11
 
@@ -274,7 +248,47 @@ Uso Máximo de Memória: 11
 Algoritmo: Greedy Best-First Search
 --------------------------------------------------
 Solução Encontrada: Não
-Tempo de Execução (s): 0.000034
+Tempo de Execução (s): 0.000080
 Nós Expandidos: 10
 Uso Máximo de Memória: 11
+
+==================== ANÁLISE DO LABIRINTO 8 ====================
+
+Gráficos de resultados salvos em: data/mapa_8_*.png
+
+--------------------------------------------------
+Algoritmo: Depth-First Search (DFS)
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 11
+Tempo de Execução (s): 0.000386
+Nós Expandidos: 31
+Uso Máximo de Memória: 36
+
+--------------------------------------------------
+Algoritmo: Breadth-First Search (BFS)
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 9
+Tempo de Execução (s): 0.000179
+Nós Expandidos: 23
+Uso Máximo de Memória: 28
+
+--------------------------------------------------
+Algoritmo: A* Search (A-Star)
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 9
+Tempo de Execução (s): 0.000263
+Nós Expandidos: 19
+Uso Máximo de Memória: 24
+
+--------------------------------------------------
+Algoritmo: Greedy Best-First Search
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 11
+Tempo de Execução (s): 0.000180
+Nós Expandidos: 15
+Uso Máximo de Memória: 22
 

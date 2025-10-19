@@ -5,12 +5,7 @@ Grid = List[List[str]]
 Pos = Tuple[int, int]
 
 class Maze:
-    # Representa o espaço de estados para o problema do labirinto.
-    # COnveções:
-    # - 'S' é o estado inicial (start),'#' são paredes (walls),
-    #   '.' são espaços livres (free spaces) e 'G' é o estado objetivo
-    #  Ações: mover para N, S, O, L (4-dreções). Expandir para 8 direções se desejado
-    
+   
     
     def __init__(self, grid: Grid):
         self.grid = grid
