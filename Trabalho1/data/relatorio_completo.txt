@@ -1,0 +1,388 @@
+================================================================================
+        RELATÓRIO COMPARATIVO DOS ALGORITMOS DE BUSCA
+================================================================================
+
+Data da Execução: 20/10/2025 22:04:23
+Total de Labirintos Testados: 9
+
+================================== RESUMO GERAL ==================================
+
+Algoritmo                      Sucessos   Tempo Médio     Nós Médios   Memória Média   Custo Médio 
+----------------------------------------------------------------------------------------------------
+Depth-First Search (DFS)         77.8%     0.000490s       55.3          78.1       38.6
+Breadth-First Search (BFS)       77.8%     0.000683s       78.7          82.8       23.4
+A* Search (A-Star)               77.8%     0.000664s       56.2          65.4       23.4
+Greedy Best-First Search         77.8%     0.000327s       33.4          52.2       27.1
+
+================================================================================
+
+==================== ANÁLISE DO LABIRINTO 1 ====================
+
+Gráficos de resultados salvos em: data/mapa_1_*.png
+
+Arquivo de origem: labirinto1.txt
+
+--------------------------------------------------
+Algoritmo: Depth-First Search (DFS)
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 2
+Tempo de Execução (s): 0.000031
+Nós Expandidos: 3
+Uso Máximo de Memória: 4
+
+--------------------------------------------------
+Algoritmo: Breadth-First Search (BFS)
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 2
+Tempo de Execução (s): 0.000019
+Nós Expandidos: 3
+Uso Máximo de Memória: 4
+
+--------------------------------------------------
+Algoritmo: A* Search (A-Star)
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 2
+Tempo de Execução (s): 0.000028
+Nós Expandidos: 3
+Uso Máximo de Memória: 4
+
+--------------------------------------------------
+Algoritmo: Greedy Best-First Search
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 2
+Tempo de Execução (s): 0.000018
+Nós Expandidos: 3
+Uso Máximo de Memória: 4
+
+==================== ANÁLISE DO LABIRINTO 2 ====================
+
+Gráficos de resultados salvos em: data/mapa_2_*.png
+
+Arquivo de origem: labirinto10.txt
+
+--------------------------------------------------
+Algoritmo: Depth-First Search (DFS)
+--------------------------------------------------
+Solução Encontrada: Não
+Tempo de Execução (s): 0.000020
+Nós Expandidos: 1
+Uso Máximo de Memória: 2
+
+--------------------------------------------------
+Algoritmo: Breadth-First Search (BFS)
+--------------------------------------------------
+Solução Encontrada: Não
+Tempo de Execução (s): 0.000009
+Nós Expandidos: 1
+Uso Máximo de Memória: 2
+
+--------------------------------------------------
+Algoritmo: A* Search (A-Star)
+--------------------------------------------------
+Solução Encontrada: Não
+Tempo de Execução (s): 0.000014
+Nós Expandidos: 1
+Uso Máximo de Memória: 2
+
+--------------------------------------------------
+Algoritmo: Greedy Best-First Search
+--------------------------------------------------
+Solução Encontrada: Não
+Tempo de Execução (s): 0.000008
+Nós Expandidos: 1
+Uso Máximo de Memória: 2
+
+==================== ANÁLISE DO LABIRINTO 3 ====================
+
+Gráficos de resultados salvos em: data/mapa_3_*.png
+
+Arquivo de origem: labirinto2.txt
+
+--------------------------------------------------
+Algoritmo: Depth-First Search (DFS)
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 4
+Tempo de Execução (s): 0.000068
+Nós Expandidos: 5
+Uso Máximo de Memória: 10
+
+--------------------------------------------------
+Algoritmo: Breadth-First Search (BFS)
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 4
+Tempo de Execução (s): 0.000061
+Nós Expandidos: 7
+Uso Máximo de Memória: 9
+
+--------------------------------------------------
+Algoritmo: A* Search (A-Star)
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 4
+Tempo de Execução (s): 0.000085
+Nós Expandidos: 7
+Uso Máximo de Memória: 9
+
+--------------------------------------------------
+Algoritmo: Greedy Best-First Search
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 4
+Tempo de Execução (s): 0.000050
+Nós Expandidos: 5
+Uso Máximo de Memória: 10
+
+==================== ANÁLISE DO LABIRINTO 4 ====================
+
+Gráficos de resultados salvos em: data/mapa_4_*.png
+
+Arquivo de origem: labirinto3.txt
+
+--------------------------------------------------
+Algoritmo: Depth-First Search (DFS)
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 11
+Tempo de Execução (s): 0.000276
+Nós Expandidos: 31
+Uso Máximo de Memória: 36
+
+--------------------------------------------------
+Algoritmo: Breadth-First Search (BFS)
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 9
+Tempo de Execução (s): 0.000187
+Nós Expandidos: 23
+Uso Máximo de Memória: 28
+
+--------------------------------------------------
+Algoritmo: A* Search (A-Star)
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 9
+Tempo de Execução (s): 0.000230
+Nós Expandidos: 19
+Uso Máximo de Memória: 24
+
+--------------------------------------------------
+Algoritmo: Greedy Best-First Search
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 11
+Tempo de Execução (s): 0.000140
+Nós Expandidos: 15
+Uso Máximo de Memória: 22
+
+==================== ANÁLISE DO LABIRINTO 5 ====================
+
+Gráficos de resultados salvos em: data/mapa_5_*.png
+
+Arquivo de origem: labirinto4.txt
+
+--------------------------------------------------
+Algoritmo: Depth-First Search (DFS)
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 53
+Tempo de Execução (s): 0.000443
+Nós Expandidos: 54
+Uso Máximo de Memória: 55
+
+--------------------------------------------------
+Algoritmo: Breadth-First Search (BFS)
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 53
+Tempo de Execução (s): 0.000400
+Nós Expandidos: 54
+Uso Máximo de Memória: 55
+
+--------------------------------------------------
+Algoritmo: A* Search (A-Star)
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 53
+Tempo de Execução (s): 0.000545
+Nós Expandidos: 54
+Uso Máximo de Memória: 55
+
+--------------------------------------------------
+Algoritmo: Greedy Best-First Search
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 53
+Tempo de Execução (s): 0.000430
+Nós Expandidos: 54
+Uso Máximo de Memória: 55
+
+==================== ANÁLISE DO LABIRINTO 6 ====================
+
+Gráficos de resultados salvos em: data/mapa_6_*.png
+
+Arquivo de origem: labirinto5.txt
+
+--------------------------------------------------
+Algoritmo: Depth-First Search (DFS)
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 30
+Tempo de Execução (s): 0.000355
+Nós Expandidos: 39
+Uso Máximo de Memória: 79
+
+--------------------------------------------------
+Algoritmo: Breadth-First Search (BFS)
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 18
+Tempo de Execução (s): 0.000887
+Nós Expandidos: 100
+Uso Máximo de Memória: 104
+
+--------------------------------------------------
+Algoritmo: A* Search (A-Star)
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 18
+Tempo de Execução (s): 0.001148
+Nós Expandidos: 92
+Uso Máximo de Memória: 118
+
+--------------------------------------------------
+Algoritmo: Greedy Best-First Search
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 18
+Tempo de Execução (s): 0.000221
+Nós Expandidos: 19
+Uso Máximo de Memória: 66
+
+==================== ANÁLISE DO LABIRINTO 8 ====================
+
+Gráficos de resultados salvos em: data/mapa_8_*.png
+
+Arquivo de origem: labirinto7.txt
+
+--------------------------------------------------
+Algoritmo: Depth-First Search (DFS)
+--------------------------------------------------
+Solução Encontrada: Não
+Tempo de Execução (s): 0.000094
+Nós Expandidos: 10
+Uso Máximo de Memória: 11
+
+--------------------------------------------------
+Algoritmo: Breadth-First Search (BFS)
+--------------------------------------------------
+Solução Encontrada: Não
+Tempo de Execução (s): 0.000072
+Nós Expandidos: 10
+Uso Máximo de Memória: 11
+
+--------------------------------------------------
+Algoritmo: A* Search (A-Star)
+--------------------------------------------------
+Solução Encontrada: Não
+Tempo de Execução (s): 0.000104
+Nós Expandidos: 10
+Uso Máximo de Memória: 11
+
+--------------------------------------------------
+Algoritmo: Greedy Best-First Search
+--------------------------------------------------
+Solução Encontrada: Não
+Tempo de Execução (s): 0.000078
+Nós Expandidos: 10
+Uso Máximo de Memória: 11
+
+==================== ANÁLISE DO LABIRINTO 9 ====================
+
+Gráficos de resultados salvos em: data/mapa_9_*.png
+
+Arquivo de origem: labirinto8.txt
+
+--------------------------------------------------
+Algoritmo: Depth-First Search (DFS)
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 50
+Tempo de Execução (s): 0.000797
+Nós Expandidos: 84
+Uso Máximo de Memória: 151
+
+--------------------------------------------------
+Algoritmo: Breadth-First Search (BFS)
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 18
+Tempo de Execução (s): 0.000971
+Nós Expandidos: 107
+Uso Máximo de Memória: 118
+
+--------------------------------------------------
+Algoritmo: A* Search (A-Star)
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 18
+Tempo de Execução (s): 0.001001
+Nós Expandidos: 83
+Uso Máximo de Memória: 98
+
+--------------------------------------------------
+Algoritmo: Greedy Best-First Search
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 34
+Tempo de Execução (s): 0.000911
+Nós Expandidos: 84
+Uso Máximo de Memória: 113
+
+==================== ANÁLISE DO LABIRINTO 10 ====================
+
+Gráficos de resultados salvos em: data/mapa_10_*.png
+
+Arquivo de origem: labirinto9.txt
+
+--------------------------------------------------
+Algoritmo: Depth-First Search (DFS)
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 120
+Tempo de Execução (s): 0.002324
+Nós Expandidos: 271
+Uso Máximo de Memória: 355
+
+--------------------------------------------------
+Algoritmo: Breadth-First Search (BFS)
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 60
+Tempo de Execução (s): 0.003545
+Nós Expandidos: 403
+Uso Máximo de Memória: 414
+
+--------------------------------------------------
+Algoritmo: A* Search (A-Star)
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 60
+Tempo de Execução (s): 0.002822
+Nós Expandidos: 237
+Uso Máximo de Memória: 268
+
+--------------------------------------------------
+Algoritmo: Greedy Best-First Search
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 68
+Tempo de Execução (s): 0.001090
+Nós Expandidos: 110
+Uso Máximo de Memória: 187
+
