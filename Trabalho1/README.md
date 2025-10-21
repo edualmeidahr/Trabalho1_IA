@@ -101,7 +101,9 @@ Os arquivos `.txt` devem seguir este formato:
 
 ## 🏃‍♂️ Executando o Projeto
 
-Com as dependências instaladas e os labirintos na pasta `data/`, basta executar o script principal a partir da pasta raiz do projeto. Para isso, é bom relembrar que você tme que estar dentro da pasta `Trabalho1`.
+## Executando script principal
+
+Com as dependências instaladas e os labirintos na pasta `data/`, basta executar o script principal a partir da pasta `Trabalho1`.
 
 ```Bash
 
@@ -112,11 +114,25 @@ python3 run_search.py
 python run_search.py
 # ou
 py run_search.py
-
 ```
+
+## Exetuando script secundário
+Para rodar uma demonstração exemplo de comparação entre as heurísticas utilizadas no trabalho `Manhattan` vs. `Euclidiana`, basta executar o script secundário a partir da pasta `Trabalho1`.
+
+```Bash
+
+# Em Linux/macOS
+python3 demo_heuristics.py
+
+# Em Windows
+python demo_heuristics.py
+# ou
+py demo_heuristics.py
+```
+
 # Máquinas de Teste
 
-Para testagem do projeto, foram utilizadas 2 máquinas que rodadaram o cógido em sistema operacional Linux (Ubuntu).
+Para testagem do projeto, foram utilizadas 2 máquinas que rodaram o cógido em sistema operacional Linux (Ubuntu).
 
 | Máquina | Processador            | Memória RAM | Sistema Operacional |
 |------------------|------------------------|-------------|---------------------|
