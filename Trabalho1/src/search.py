@@ -4,7 +4,7 @@ import heapq
 from typing import Dict , List, Tuple, Optional
 
 from src.maze import Maze, Pos
-from src.heuristics import manhattan_distance
+from src.heuristics import manhattan_distance, euclidean_distance
 
 
 # Função para reconstruir o caminho do início ao objetivo
@@ -232,5 +232,91 @@ def greedy_search(maze: Maze):
         "max_memory_usage": max_memory_usage
     }
 
+    return None, metrics
+
+
+# Versões com heurística euclidiana para comparação
+def a_star_search_euclidean(maze: Maze):
+    """A* Search usando heurística euclidiana"""
+    start_node = maze.start
+    goal_node = maze.goal
+    nodes_expanded = 0
+    max_memory_usage = 0
+    frontier = []
+    f_start = euclidean_distance(start_node, goal_node)
+    heapq.heappush(frontier, (f_start, start_node))
+    came_from: Dict[Pos, Pos] = {start_node: None}
+    g_cost: Dict[Pos, int] = {start_node: 0}
+
+    while frontier:
+        current_memory = len(frontier) + len(g_cost)
+        if current_memory > max_memory_usage:
+            max_memory_usage = current_memory
+        _, current_node = heapq.heappop(frontier)
+        nodes_expanded += 1
+
+        if maze.goal_test(current_node):
+            path = reconstruct_path(came_from, start_node, goal_node)
+            metrics = {
+                "nodes_expanded": nodes_expanded,
+                "max_memory_usage": max_memory_usage
+            }
+            return path, metrics
+        
+        for action in maze.actions(current_node):
+            neighbor_node = maze.result(current_node, action)
+            step_cost = maze.step_cost(current_node, action, neighbor_node)
+            g_cost_tentative = g_cost[current_node] + step_cost
+            
+            if neighbor_node not in g_cost or g_cost_tentative < g_cost[neighbor_node]:
+                came_from[neighbor_node] = current_node
+                g_cost[neighbor_node] = g_cost_tentative
+                f_cost = g_cost_tentative + euclidean_distance(neighbor_node, goal_node)
+                heapq.heappush(frontier, (f_cost, neighbor_node))
+        
+    metrics = {
+        "nodes_expanded": nodes_expanded,
+        "max_memory_usage": max_memory_usage
+    }
+    return None, metrics
+
+
+def greedy_search_euclidean(maze: Maze):
+    """Greedy Search usando heurística euclidiana"""
+    start_node = maze.start
+    goal_node = maze.goal
+    nodes_expanded = 0
+    max_memory_usage = 0
+    frontier = []
+    h_start = euclidean_distance(start_node, goal_node)
+    heapq.heappush(frontier, (h_start, start_node))
+    came_from: Dict[Pos, Optional[Pos]] = {start_node: None}
+
+    while frontier:
+        current_memory = len(frontier) + len(came_from)
+        if current_memory > max_memory_usage:
+            max_memory_usage = current_memory
+        _, current_node = heapq.heappop(frontier)
+        nodes_expanded += 1
+
+        if maze.goal_test(current_node):
+            path = reconstruct_path(came_from, start_node, goal_node)
+            metrics = {
+                "nodes_expanded": nodes_expanded,
+                "max_memory_usage": max_memory_usage
+            }
+            return path, metrics
+        
+        for action in maze.actions(current_node):
+            neighbor_node = maze.result(current_node, action)
+            if neighbor_node not in came_from:
+                came_from[neighbor_node] = current_node
+                h_cost = euclidean_distance(neighbor_node, goal_node)
+                heapq.heappush(frontier, (h_cost, neighbor_node))
+        
+    metrics = {
+        "nodes_expanded": nodes_expanded,
+        "max_memory_usage": max_memory_usage
+    }
     return None, metrics
 

@@ -10,14 +10,16 @@ import os
 import glob
 import matplotlib.pyplot as plt
 
-from src.search import a_star_search, dfs, bfs, greedy_search
+from src.search import a_star_search, dfs, bfs, greedy_search, a_star_search_euclidean, greedy_search_euclidean
 from src.maze import Maze, Grid
 
 ALGORITHMS_TO_RUN = {
     "Depth-First Search (DFS)": dfs,
     "Breadth-First Search (BFS)": bfs,
-    "A* Search (A-Star)": a_star_search,
-    "Greedy Best-First Search": greedy_search,
+    "A* Search Manhattan": a_star_search,
+    "A* Search Euclidiana": a_star_search_euclidean,
+    "Greedy Search Manhattan": greedy_search,
+    "Greedy Search Euclidiana": greedy_search_euclidean,
 }
 
 
@@ -59,7 +61,7 @@ def generate_and_save_graphs(results_for_maze: List[dict], maze_number: int, out
     def create_bar_chart(data, title, ylabel, filename):
         try:
             plt.figure(figsize=(10, 6))  # Define o tamanho da imagem
-            bars = plt.bar(algorithms, data, color=['blue', 'green', 'red', 'purple'])
+            bars = plt.bar(algorithms, data, color=['blue', 'green', 'red', 'orange', 'purple', 'brown'])
 
             # Adiciona os valores numéricos no topo de cada barra
             plt.bar_label(bars, fmt='%.6f' if min(data) > 0 and min(data) < 0.01 else '%.2f')
@@ -157,6 +159,44 @@ def save_results(all_experiments_data, output_file):
 
                     file.write(f"{alg_name:<30} {success_rate:>6.1f}% {avg_time:>12.6f}s {avg_nodes:>10.1f} {avg_memory:>13.1f} {avg_cost:>10.1f}\n")
 
+            file.write("\n" + "=" * 80 + "\n\n")
+
+            # Comparação de Heurísticas
+            file.write("=" * 30 + " COMPARAÇÃO DE HEURÍSTICAS " + "=" * 30 + "\n\n")
+            
+            # Coleta estatísticas por heurística
+            manhattan_stats = {'A*': [], 'Greedy': []}
+            euclidean_stats = {'A*': [], 'Greedy': []}
+            
+            for maze_number, source_file, results_for_maze in all_experiments_data:
+                for result in results_for_maze:
+                    alg_name = result['algorithm']
+                    if 'Manhattan' in alg_name:
+                        if 'A*' in alg_name:
+                            manhattan_stats['A*'].append(result)
+                        else:
+                            manhattan_stats['Greedy'].append(result)
+                    elif 'Euclidiana' in alg_name:
+                        if 'A*' in alg_name:
+                            euclidean_stats['A*'].append(result)
+                        else:
+                            euclidean_stats['Greedy'].append(result)
+            
+            file.write(f"{'Heurística':<15} {'Algoritmo':<15} {'Sucessos':<10} {'Tempo Médio':<15} {'Nós Médios':<12} {'Memória Média':<15} {'Custo Médio':<12}\n")
+            file.write("-" * 100 + "\n")
+            
+            for heuristic_name, stats in [("Manhattan", manhattan_stats), ("Euclidiana", euclidean_stats)]:
+                for alg_type, results in stats.items():
+                    if results:
+                        success_rate = sum(1 for r in results if r['solution_found']) / len(results) * 100
+                        avg_time = sum(r['time'] for r in results) / len(results)
+                        avg_nodes = sum(r['metrics']['nodes_expanded'] for r in results) / len(results)
+                        avg_memory = sum(r['metrics']['max_memory_usage'] for r in results) / len(results)
+                        successful_results = [r for r in results if r['solution_found']]
+                        avg_cost = sum(r['cost'] for r in successful_results) / len(successful_results) if successful_results else 0
+                        
+                        file.write(f"{heuristic_name:<15} {alg_type:<15} {success_rate:>6.1f}% {avg_time:>12.6f}s {avg_nodes:>10.1f} {avg_memory:>13.1f} {avg_cost:>10.1f}\n")
+            
             file.write("\n" + "=" * 80 + "\n\n")
 
             # Detalhes por labirinto

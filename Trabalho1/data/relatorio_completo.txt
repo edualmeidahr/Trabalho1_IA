@@ -2,17 +2,30 @@
         RELATÓRIO COMPARATIVO DOS ALGORITMOS DE BUSCA
 ================================================================================
 
-Data da Execução: 20/10/2025 22:04:23
+Data da Execução: 21/10/2025 16:43:19
 Total de Labirintos Testados: 9
 
 ================================== RESUMO GERAL ==================================
 
 Algoritmo                      Sucessos   Tempo Médio     Nós Médios   Memória Média   Custo Médio 
 ----------------------------------------------------------------------------------------------------
-Depth-First Search (DFS)         77.8%     0.000490s       55.3          78.1       38.6
-Breadth-First Search (BFS)       77.8%     0.000683s       78.7          82.8       23.4
-A* Search (A-Star)               77.8%     0.000664s       56.2          65.4       23.4
-Greedy Best-First Search         77.8%     0.000327s       33.4          52.2       27.1
+Depth-First Search (DFS)         77.8%     0.000204s       55.3          78.1       38.6
+Breadth-First Search (BFS)       77.8%     0.000261s       78.7          82.8       23.4
+A* Search Manhattan              77.8%     0.000263s       56.2          65.4       23.4
+A* Search Euclidiana             77.8%     0.000273s       60.3          68.9       23.4
+Greedy Search Manhattan          77.8%     0.000139s       33.4          52.2       27.1
+Greedy Search Euclidiana         77.8%     0.000134s       29.4          45.8       25.1
+
+================================================================================
+
+============================== COMPARAÇÃO DE HEURÍSTICAS ==============================
+
+Heurística      Algoritmo       Sucessos   Tempo Médio     Nós Médios   Memória Média   Custo Médio 
+----------------------------------------------------------------------------------------------------
+Manhattan       A*                77.8%     0.000263s       56.2          65.4       23.4
+Manhattan       Greedy            77.8%     0.000139s       33.4          52.2       27.1
+Euclidiana      A*                77.8%     0.000273s       60.3          68.9       23.4
+Euclidiana      Greedy            77.8%     0.000134s       29.4          45.8       25.1
 
 ================================================================================
 
@@ -27,7 +40,7 @@ Algoritmo: Depth-First Search (DFS)
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 2
-Tempo de Execução (s): 0.000031
+Tempo de Execução (s): 0.000016
 Nós Expandidos: 3
 Uso Máximo de Memória: 4
 
@@ -36,25 +49,43 @@ Algoritmo: Breadth-First Search (BFS)
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 2
-Tempo de Execução (s): 0.000019
+Tempo de Execução (s): 0.000009
 Nós Expandidos: 3
 Uso Máximo de Memória: 4
 
 --------------------------------------------------
-Algoritmo: A* Search (A-Star)
---------------------------------------------------
-Solução Encontrada: Sim
-Custo do Caminho: 2
-Tempo de Execução (s): 0.000028
-Nós Expandidos: 3
-Uso Máximo de Memória: 4
-
---------------------------------------------------
-Algoritmo: Greedy Best-First Search
+Algoritmo: A* Search Manhattan
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 2
 Tempo de Execução (s): 0.000018
+Nós Expandidos: 3
+Uso Máximo de Memória: 4
+
+--------------------------------------------------
+Algoritmo: A* Search Euclidiana
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 2
+Tempo de Execução (s): 0.000015
+Nós Expandidos: 3
+Uso Máximo de Memória: 4
+
+--------------------------------------------------
+Algoritmo: Greedy Search Manhattan
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 2
+Tempo de Execução (s): 0.000011
+Nós Expandidos: 3
+Uso Máximo de Memória: 4
+
+--------------------------------------------------
+Algoritmo: Greedy Search Euclidiana
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 2
+Tempo de Execução (s): 0.000012
 Nós Expandidos: 3
 Uso Máximo de Memória: 4
 
@@ -68,7 +99,7 @@ Arquivo de origem: labirinto10.txt
 Algoritmo: Depth-First Search (DFS)
 --------------------------------------------------
 Solução Encontrada: Não
-Tempo de Execução (s): 0.000020
+Tempo de Execução (s): 0.000028
 Nós Expandidos: 1
 Uso Máximo de Memória: 2
 
@@ -76,23 +107,39 @@ Uso Máximo de Memória: 2
 Algoritmo: Breadth-First Search (BFS)
 --------------------------------------------------
 Solução Encontrada: Não
-Tempo de Execução (s): 0.000009
+Tempo de Execução (s): 0.000007
 Nós Expandidos: 1
 Uso Máximo de Memória: 2
 
 --------------------------------------------------
-Algoritmo: A* Search (A-Star)
+Algoritmo: A* Search Manhattan
 --------------------------------------------------
 Solução Encontrada: Não
-Tempo de Execução (s): 0.000014
+Tempo de Execução (s): 0.000015
 Nós Expandidos: 1
 Uso Máximo de Memória: 2
 
 --------------------------------------------------
-Algoritmo: Greedy Best-First Search
+Algoritmo: A* Search Euclidiana
 --------------------------------------------------
 Solução Encontrada: Não
-Tempo de Execução (s): 0.000008
+Tempo de Execução (s): 0.000015
+Nós Expandidos: 1
+Uso Máximo de Memória: 2
+
+--------------------------------------------------
+Algoritmo: Greedy Search Manhattan
+--------------------------------------------------
+Solução Encontrada: Não
+Tempo de Execução (s): 0.000007
+Nós Expandidos: 1
+Uso Máximo de Memória: 2
+
+--------------------------------------------------
+Algoritmo: Greedy Search Euclidiana
+--------------------------------------------------
+Solução Encontrada: Não
+Tempo de Execução (s): 0.000007
 Nós Expandidos: 1
 Uso Máximo de Memória: 2
 
@@ -107,7 +154,7 @@ Algoritmo: Depth-First Search (DFS)
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 4
-Tempo de Execução (s): 0.000068
+Tempo de Execução (s): 0.000031
 Nós Expandidos: 5
 Uso Máximo de Memória: 10
 
@@ -116,25 +163,43 @@ Algoritmo: Breadth-First Search (BFS)
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 4
-Tempo de Execução (s): 0.000061
+Tempo de Execução (s): 0.000027
 Nós Expandidos: 7
 Uso Máximo de Memória: 9
 
 --------------------------------------------------
-Algoritmo: A* Search (A-Star)
+Algoritmo: A* Search Manhattan
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 4
-Tempo de Execução (s): 0.000085
+Tempo de Execução (s): 0.000038
 Nós Expandidos: 7
 Uso Máximo de Memória: 9
 
 --------------------------------------------------
-Algoritmo: Greedy Best-First Search
+Algoritmo: A* Search Euclidiana
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 4
-Tempo de Execução (s): 0.000050
+Tempo de Execução (s): 0.000034
+Nós Expandidos: 7
+Uso Máximo de Memória: 9
+
+--------------------------------------------------
+Algoritmo: Greedy Search Manhattan
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 4
+Tempo de Execução (s): 0.000022
+Nós Expandidos: 5
+Uso Máximo de Memória: 10
+
+--------------------------------------------------
+Algoritmo: Greedy Search Euclidiana
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 4
+Tempo de Execução (s): 0.000022
 Nós Expandidos: 5
 Uso Máximo de Memória: 10
 
@@ -149,7 +214,7 @@ Algoritmo: Depth-First Search (DFS)
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 11
-Tempo de Execução (s): 0.000276
+Tempo de Execução (s): 0.000117
 Nós Expandidos: 31
 Uso Máximo de Memória: 36
 
@@ -158,27 +223,45 @@ Algoritmo: Breadth-First Search (BFS)
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 9
-Tempo de Execução (s): 0.000187
+Tempo de Execução (s): 0.000076
 Nós Expandidos: 23
 Uso Máximo de Memória: 28
 
 --------------------------------------------------
-Algoritmo: A* Search (A-Star)
+Algoritmo: A* Search Manhattan
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 9
-Tempo de Execução (s): 0.000230
+Tempo de Execução (s): 0.000086
 Nós Expandidos: 19
 Uso Máximo de Memória: 24
 
 --------------------------------------------------
-Algoritmo: Greedy Best-First Search
+Algoritmo: A* Search Euclidiana
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 9
+Tempo de Execução (s): 0.000083
+Nós Expandidos: 19
+Uso Máximo de Memória: 24
+
+--------------------------------------------------
+Algoritmo: Greedy Search Manhattan
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 11
-Tempo de Execução (s): 0.000140
+Tempo de Execução (s): 0.000056
 Nós Expandidos: 15
 Uso Máximo de Memória: 22
+
+--------------------------------------------------
+Algoritmo: Greedy Search Euclidiana
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 11
+Tempo de Execução (s): 0.000049
+Nós Expandidos: 12
+Uso Máximo de Memória: 21
 
 ==================== ANÁLISE DO LABIRINTO 5 ====================
 
@@ -191,7 +274,7 @@ Algoritmo: Depth-First Search (DFS)
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 53
-Tempo de Execução (s): 0.000443
+Tempo de Execução (s): 0.000196
 Nós Expandidos: 54
 Uso Máximo de Memória: 55
 
@@ -200,25 +283,43 @@ Algoritmo: Breadth-First Search (BFS)
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 53
-Tempo de Execução (s): 0.000400
+Tempo de Execução (s): 0.000163
 Nós Expandidos: 54
 Uso Máximo de Memória: 55
 
 --------------------------------------------------
-Algoritmo: A* Search (A-Star)
+Algoritmo: A* Search Manhattan
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 53
-Tempo de Execução (s): 0.000545
+Tempo de Execução (s): 0.000204
 Nós Expandidos: 54
 Uso Máximo de Memória: 55
 
 --------------------------------------------------
-Algoritmo: Greedy Best-First Search
+Algoritmo: A* Search Euclidiana
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 53
-Tempo de Execução (s): 0.000430
+Tempo de Execução (s): 0.000202
+Nós Expandidos: 54
+Uso Máximo de Memória: 55
+
+--------------------------------------------------
+Algoritmo: Greedy Search Manhattan
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 53
+Tempo de Execução (s): 0.000171
+Nós Expandidos: 54
+Uso Máximo de Memória: 55
+
+--------------------------------------------------
+Algoritmo: Greedy Search Euclidiana
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 53
+Tempo de Execução (s): 0.000175
 Nós Expandidos: 54
 Uso Máximo de Memória: 55
 
@@ -233,7 +334,7 @@ Algoritmo: Depth-First Search (DFS)
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 30
-Tempo de Execução (s): 0.000355
+Tempo de Execução (s): 0.000189
 Nós Expandidos: 39
 Uso Máximo de Memória: 79
 
@@ -242,27 +343,45 @@ Algoritmo: Breadth-First Search (BFS)
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 18
-Tempo de Execução (s): 0.000887
+Tempo de Execução (s): 0.000368
 Nós Expandidos: 100
 Uso Máximo de Memória: 104
 
 --------------------------------------------------
-Algoritmo: A* Search (A-Star)
+Algoritmo: A* Search Manhattan
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 18
-Tempo de Execução (s): 0.001148
+Tempo de Execução (s): 0.000483
 Nós Expandidos: 92
 Uso Máximo de Memória: 118
 
 --------------------------------------------------
-Algoritmo: Greedy Best-First Search
+Algoritmo: A* Search Euclidiana
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 18
-Tempo de Execução (s): 0.000221
+Tempo de Execução (s): 0.000451
+Nós Expandidos: 92
+Uso Máximo de Memória: 118
+
+--------------------------------------------------
+Algoritmo: Greedy Search Manhattan
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 18
+Tempo de Execução (s): 0.000092
 Nós Expandidos: 19
 Uso Máximo de Memória: 66
+
+--------------------------------------------------
+Algoritmo: Greedy Search Euclidiana
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 18
+Tempo de Execução (s): 0.000084
+Nós Expandidos: 19
+Uso Máximo de Memória: 40
 
 ==================== ANÁLISE DO LABIRINTO 8 ====================
 
@@ -274,7 +393,7 @@ Arquivo de origem: labirinto7.txt
 Algoritmo: Depth-First Search (DFS)
 --------------------------------------------------
 Solução Encontrada: Não
-Tempo de Execução (s): 0.000094
+Tempo de Execução (s): 0.000043
 Nós Expandidos: 10
 Uso Máximo de Memória: 11
 
@@ -282,23 +401,39 @@ Uso Máximo de Memória: 11
 Algoritmo: Breadth-First Search (BFS)
 --------------------------------------------------
 Solução Encontrada: Não
-Tempo de Execução (s): 0.000072
+Tempo de Execução (s): 0.000031
 Nós Expandidos: 10
 Uso Máximo de Memória: 11
 
 --------------------------------------------------
-Algoritmo: A* Search (A-Star)
+Algoritmo: A* Search Manhattan
 --------------------------------------------------
 Solução Encontrada: Não
-Tempo de Execução (s): 0.000104
+Tempo de Execução (s): 0.000056
 Nós Expandidos: 10
 Uso Máximo de Memória: 11
 
 --------------------------------------------------
-Algoritmo: Greedy Best-First Search
+Algoritmo: A* Search Euclidiana
 --------------------------------------------------
 Solução Encontrada: Não
-Tempo de Execução (s): 0.000078
+Tempo de Execução (s): 0.000043
+Nós Expandidos: 10
+Uso Máximo de Memória: 11
+
+--------------------------------------------------
+Algoritmo: Greedy Search Manhattan
+--------------------------------------------------
+Solução Encontrada: Não
+Tempo de Execução (s): 0.000034
+Nós Expandidos: 10
+Uso Máximo de Memória: 11
+
+--------------------------------------------------
+Algoritmo: Greedy Search Euclidiana
+--------------------------------------------------
+Solução Encontrada: Não
+Tempo de Execução (s): 0.000034
 Nós Expandidos: 10
 Uso Máximo de Memória: 11
 
@@ -313,7 +448,7 @@ Algoritmo: Depth-First Search (DFS)
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 50
-Tempo de Execução (s): 0.000797
+Tempo de Execução (s): 0.000325
 Nós Expandidos: 84
 Uso Máximo de Memória: 151
 
@@ -322,27 +457,45 @@ Algoritmo: Breadth-First Search (BFS)
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 18
-Tempo de Execução (s): 0.000971
+Tempo de Execução (s): 0.000390
 Nós Expandidos: 107
 Uso Máximo de Memória: 118
 
 --------------------------------------------------
-Algoritmo: A* Search (A-Star)
+Algoritmo: A* Search Manhattan
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 18
-Tempo de Execução (s): 0.001001
+Tempo de Execução (s): 0.000410
 Nós Expandidos: 83
 Uso Máximo de Memória: 98
 
 --------------------------------------------------
-Algoritmo: Greedy Best-First Search
+Algoritmo: A* Search Euclidiana
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 18
+Tempo de Execução (s): 0.000414
+Nós Expandidos: 83
+Uso Máximo de Memória: 98
+
+--------------------------------------------------
+Algoritmo: Greedy Search Manhattan
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 34
-Tempo de Execução (s): 0.000911
+Tempo de Execução (s): 0.000351
 Nós Expandidos: 84
 Uso Máximo de Memória: 113
+
+--------------------------------------------------
+Algoritmo: Greedy Search Euclidiana
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 26
+Tempo de Execução (s): 0.000391
+Nós Expandidos: 91
+Uso Máximo de Memória: 120
 
 ==================== ANÁLISE DO LABIRINTO 10 ====================
 
@@ -355,7 +508,7 @@ Algoritmo: Depth-First Search (DFS)
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 120
-Tempo de Execução (s): 0.002324
+Tempo de Execução (s): 0.000893
 Nós Expandidos: 271
 Uso Máximo de Memória: 355
 
@@ -364,25 +517,43 @@ Algoritmo: Breadth-First Search (BFS)
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 60
-Tempo de Execução (s): 0.003545
+Tempo de Execução (s): 0.001281
 Nós Expandidos: 403
 Uso Máximo de Memória: 414
 
 --------------------------------------------------
-Algoritmo: A* Search (A-Star)
+Algoritmo: A* Search Manhattan
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 60
-Tempo de Execução (s): 0.002822
+Tempo de Execução (s): 0.001060
 Nós Expandidos: 237
 Uso Máximo de Memória: 268
 
 --------------------------------------------------
-Algoritmo: Greedy Best-First Search
+Algoritmo: A* Search Euclidiana
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 60
+Tempo de Execução (s): 0.001203
+Nós Expandidos: 274
+Uso Máximo de Memória: 299
+
+--------------------------------------------------
+Algoritmo: Greedy Search Manhattan
 --------------------------------------------------
 Solução Encontrada: Sim
 Custo do Caminho: 68
-Tempo de Execução (s): 0.001090
+Tempo de Execução (s): 0.000504
 Nós Expandidos: 110
 Uso Máximo de Memória: 187
+
+--------------------------------------------------
+Algoritmo: Greedy Search Euclidiana
+--------------------------------------------------
+Solução Encontrada: Sim
+Custo do Caminho: 62
+Tempo de Execução (s): 0.000430
+Nós Expandidos: 70
+Uso Máximo de Memória: 149
 
