@@ -1,0 +1,2503 @@
+RELATÓRIO DE DESEMPENHO: Hill Climbing com Random-Restart
+Parâmetros: max_restarts=100, iter/restart=100, lateral_moves/restart=0
+------------------------------------------------------------
+Execução 1:
+    Estado inicial do tabuleiro:
+         .  .  x  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  x 
+         .  .  .  .  .  x  x  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  .  x  . 
+         .  .  x  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  x  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 3.4447 ms
+    Passos totais (acumulados): 15
+    Número de reinícios feitos: 4
+------------------------------------------------------------
+Execução 2:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  x  . 
+         .  .  .  .  .  x  .  x 
+         .  .  x  .  x  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  x  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 8.4300 ms
+    Passos totais (acumulados): 30
+    Número de reinícios feitos: 9
+------------------------------------------------------------
+Execução 3:
+    Estado inicial do tabuleiro:
+         x  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  .  x  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 6.2204 ms
+    Passos totais (acumulados): 14
+    Número de reinícios feitos: 3
+------------------------------------------------------------
+Execução 4:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         x  .  x  .  .  x  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  x  .  x  .  .  x  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  .  x  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  x  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 5.5246 ms
+    Passos totais (acumulados): 13
+    Número de reinícios feitos: 3
+------------------------------------------------------------
+Execução 5:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  x  x  . 
+         .  x  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  x  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 7.0235 ms
+    Passos totais (acumulados): 26
+    Número de reinícios feitos: 8
+------------------------------------------------------------
+Execução 6:
+    Estado inicial do tabuleiro:
+         .  .  .  .  x  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  x  .  .  x  x  . 
+         .  .  .  .  .  .  .  x 
+
+    Estado final do tabuleiro:
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  x  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 1.4271 ms
+    Passos totais (acumulados): 6
+    Número de reinícios feitos: 1
+------------------------------------------------------------
+Execução 7:
+    Estado inicial do tabuleiro:
+         x  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  .  .  .  x 
+         .  x  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+    Solução encontrada? Sim
+    Tempo de execução: 5.3972 ms
+    Passos totais (acumulados): 22
+    Número de reinícios feitos: 7
+------------------------------------------------------------
+Execução 8:
+    Estado inicial do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  x  .  .  .  .  .  . 
+         x  .  .  .  .  .  x  x 
+
+    Estado final do tabuleiro:
+         .  .  .  .  x  .  .  . 
+         .  .  x  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  x  .  . 
+         .  .  .  x  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 1.5999 ms
+    Passos totais (acumulados): 8
+    Número de reinícios feitos: 1
+------------------------------------------------------------
+Execução 9:
+    Estado inicial do tabuleiro:
+         .  .  .  x  x  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  x 
+         x  .  .  .  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  x  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 0.6829 ms
+    Passos totais (acumulados): 3
+    Número de reinícios feitos: 0
+------------------------------------------------------------
+Execução 10:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         x  x  .  .  .  .  x  . 
+         .  .  .  .  x  .  .  . 
+         .  .  x  x  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 0.8213 ms
+    Passos totais (acumulados): 4
+    Número de reinícios feitos: 0
+------------------------------------------------------------
+Execução 11:
+    Estado inicial do tabuleiro:
+         .  x  .  .  .  .  .  . 
+         x  .  .  .  .  x  .  x 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  x  x  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+
+    Estado final do tabuleiro:
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  x 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  x  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 8.4041 ms
+    Passos totais (acumulados): 36
+    Número de reinícios feitos: 9
+------------------------------------------------------------
+Execução 12:
+    Estado inicial do tabuleiro:
+         .  .  x  .  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  x  x  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  x  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  x  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+    Solução encontrada? Sim
+    Tempo de execução: 2.3947 ms
+    Passos totais (acumulados): 10
+    Número de reinícios feitos: 1
+------------------------------------------------------------
+Execução 13:
+    Estado inicial do tabuleiro:
+         .  x  x  .  x  x  .  . 
+         .  .  .  x  .  .  x  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  x  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 1.9160 ms
+    Passos totais (acumulados): 9
+    Número de reinícios feitos: 1
+------------------------------------------------------------
+Execução 14:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         x  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  x  x  .  x  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  x  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  x  .  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 11.3447 ms
+    Passos totais (acumulados): 43
+    Número de reinícios feitos: 10
+------------------------------------------------------------
+Execução 15:
+    Estado inicial do tabuleiro:
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         x  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  x  x  .  .  .  x 
+         .  .  .  .  .  .  .  . 
+         .  x  .  .  .  .  x  . 
+
+    Estado final do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  x 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 1.7903 ms
+    Passos totais (acumulados): 8
+    Número de reinícios feitos: 1
+------------------------------------------------------------
+Execução 16:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  x  x  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  x  .  .  .  .  .  x 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 1.1412 ms
+    Passos totais (acumulados): 5
+    Número de reinícios feitos: 1
+------------------------------------------------------------
+Execução 17:
+    Estado inicial do tabuleiro:
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  x  x  x  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  x  .  .  .  .  .  x 
+         .  .  x  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  .  .  x 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  x  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 12.9481 ms
+    Passos totais (acumulados): 54
+    Número de reinícios feitos: 15
+------------------------------------------------------------
+Execução 18:
+    Estado inicial do tabuleiro:
+         x  .  .  .  .  .  .  . 
+         .  x  .  x  .  .  x  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  x  x  .  x 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  x  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 3.9621 ms
+    Passos totais (acumulados): 17
+    Número de reinícios feitos: 4
+------------------------------------------------------------
+Execução 19:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  x  .  .  x  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  x  x  .  .  . 
+
+    Estado final do tabuleiro:
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  x  .  . 
+         .  .  .  x  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 9.5541 ms
+    Passos totais (acumulados): 37
+    Número de reinícios feitos: 11
+------------------------------------------------------------
+Execução 20:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  x  .  .  .  .  x 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  x  x  x  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  .  x  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  x  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 5.5557 ms
+    Passos totais (acumulados): 23
+    Número de reinícios feitos: 7
+------------------------------------------------------------
+Execução 21:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         .  x  .  .  .  x  .  . 
+         x  .  .  .  x  .  .  . 
+         .  .  x  .  .  .  x  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  x  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  x  .  . 
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 6.4957 ms
+    Passos totais (acumulados): 28
+    Número de reinícios feitos: 7
+------------------------------------------------------------
+Execução 22:
+    Estado inicial do tabuleiro:
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  x 
+         .  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  x  .  x  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  x  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 16.4050 ms
+    Passos totais (acumulados): 61
+    Número de reinícios feitos: 20
+------------------------------------------------------------
+Execução 23:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  x  .  .  .  x 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         x  x  x  .  .  x  x  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  x 
+         x  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+    Solução encontrada? Sim
+    Tempo de execução: 0.9882 ms
+    Passos totais (acumulados): 5
+    Número de reinícios feitos: 0
+------------------------------------------------------------
+Execução 24:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  x  x  . 
+         .  .  .  x  .  .  .  . 
+         x  x  .  .  .  .  .  x 
+         .  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 4.8678 ms
+    Passos totais (acumulados): 18
+    Número de reinícios feitos: 5
+------------------------------------------------------------
+Execução 25:
+    Estado inicial do tabuleiro:
+         .  .  x  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  x  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  x  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  x  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 1.3059 ms
+    Passos totais (acumulados): 5
+    Número de reinícios feitos: 1
+------------------------------------------------------------
+Execução 26:
+    Estado inicial do tabuleiro:
+         .  x  x  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  x  .  .  . 
+         x  .  .  .  .  .  .  x 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  x  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 5.2349 ms
+    Passos totais (acumulados): 19
+    Número de reinícios feitos: 6
+------------------------------------------------------------
+Execução 27:
+    Estado inicial do tabuleiro:
+         .  .  .  x  .  .  .  x 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         x  .  .  .  .  x  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 9.9406 ms
+    Passos totais (acumulados): 36
+    Número de reinícios feitos: 10
+------------------------------------------------------------
+Execução 28:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  x  x  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  x  .  x  .  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  x 
+         x  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 13.9816 ms
+    Passos totais (acumulados): 50
+    Número de reinícios feitos: 16
+------------------------------------------------------------
+Execução 29:
+    Estado inicial do tabuleiro:
+         x  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  x  x  x 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  x  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  x  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  x  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 5.5211 ms
+    Passos totais (acumulados): 21
+    Número de reinícios feitos: 5
+------------------------------------------------------------
+Execução 30:
+    Estado inicial do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         x  .  .  .  x  .  x  x 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  x  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  .  x  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  x  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 6.8148 ms
+    Passos totais (acumulados): 25
+    Número de reinícios feitos: 7
+------------------------------------------------------------
+Execução 31:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  .  .  .  x 
+         .  .  x  .  .  .  .  . 
+         .  .  .  x  .  x  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         x  x  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  x  .  . 
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 6.4864 ms
+    Passos totais (acumulados): 25
+    Número de reinícios feitos: 6
+------------------------------------------------------------
+Execução 32:
+    Estado inicial do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         x  .  .  .  .  .  x  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  .  .  . 
+         .  .  x  .  x  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  x  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 1.0487 ms
+    Passos totais (acumulados): 5
+    Número de reinícios feitos: 0
+------------------------------------------------------------
+Execução 33:
+    Estado inicial do tabuleiro:
+         .  .  .  .  x  .  .  . 
+         .  x  .  .  .  .  .  x 
+         x  .  x  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  .  x  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  x  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  x  .  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 2.8215 ms
+    Passos totais (acumulados): 11
+    Número de reinícios feitos: 2
+------------------------------------------------------------
+Execução 34:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  x 
+         x  .  .  .  .  .  x  . 
+         .  .  .  x  .  x  .  . 
+         .  x  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  x  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 8.1752 ms
+    Passos totais (acumulados): 31
+    Número de reinícios feitos: 8
+------------------------------------------------------------
+Execução 35:
+    Estado inicial do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  x  .  x  x  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+
+    Estado final do tabuleiro:
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  x 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 1.7036 ms
+    Passos totais (acumulados): 7
+    Número de reinícios feitos: 1
+------------------------------------------------------------
+Execução 36:
+    Estado inicial do tabuleiro:
+         x  .  x  x  .  .  .  x 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  x  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  x  .  .  . 
+         .  .  x  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 4.3049 ms
+    Passos totais (acumulados): 18
+    Número de reinícios feitos: 3
+------------------------------------------------------------
+Execução 37:
+    Estado inicial do tabuleiro:
+         x  .  .  .  .  .  x  x 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  x  .  .  . 
+         .  x  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 7.5887 ms
+    Passos totais (acumulados): 29
+    Número de reinícios feitos: 7
+------------------------------------------------------------
+Execução 38:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  x  . 
+         .  .  .  .  .  .  .  . 
+         x  .  .  .  x  .  .  . 
+         .  x  .  .  .  .  .  x 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  x  .  .  . 
+         .  .  x  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  x 
+         .  x  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 6.7069 ms
+    Passos totais (acumulados): 25
+    Número de reinícios feitos: 7
+------------------------------------------------------------
+Execução 39:
+    Estado inicial do tabuleiro:
+         .  x  .  .  .  .  x  . 
+         x  .  x  x  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  x 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  x 
+         x  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+    Solução encontrada? Sim
+    Tempo de execução: 3.7677 ms
+    Passos totais (acumulados): 14
+    Número de reinícios feitos: 4
+------------------------------------------------------------
+Execução 40:
+    Estado inicial do tabuleiro:
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  . 
+         x  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  x  .  .  .  x 
+
+    Estado final do tabuleiro:
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  x  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 2.6620 ms
+    Passos totais (acumulados): 9
+    Número de reinícios feitos: 3
+------------------------------------------------------------
+Execução 41:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         .  x  .  .  .  .  .  x 
+         .  .  .  .  .  .  .  . 
+         x  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  x  . 
+         .  .  .  x  .  x  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  .  .  x 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  x  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 0.8608 ms
+    Passos totais (acumulados): 4
+    Número de reinícios feitos: 0
+------------------------------------------------------------
+Execução 42:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         .  .  x  x  .  .  .  . 
+         x  .  .  .  .  x  .  x 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  x  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 0.8713 ms
+    Passos totais (acumulados): 4
+    Número de reinícios feitos: 0
+------------------------------------------------------------
+Execução 43:
+    Estado inicial do tabuleiro:
+         x  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  x 
+         .  x  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+    Solução encontrada? Sim
+    Tempo de execução: 5.3391 ms
+    Passos totais (acumulados): 20
+    Número de reinícios feitos: 5
+------------------------------------------------------------
+Execução 44:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  x  .  .  .  x  .  x 
+         .  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  x  . 
+         .  .  .  .  x  .  .  . 
+         .  .  x  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  x  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+    Solução encontrada? Sim
+    Tempo de execução: 1.7224 ms
+    Passos totais (acumulados): 7
+    Número de reinícios feitos: 1
+------------------------------------------------------------
+Execução 45:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  x  .  .  x  .  . 
+         x  .  .  .  .  .  .  x 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  x  . 
+
+    Estado final do tabuleiro:
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 1.9508 ms
+    Passos totais (acumulados): 8
+    Número de reinícios feitos: 1
+------------------------------------------------------------
+Execução 46:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  x  x  .  .  .  .  . 
+         .  .  .  x  .  .  .  x 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  x  . 
+
+    Estado final do tabuleiro:
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  x 
+         .  x  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  x  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 4.6628 ms
+    Passos totais (acumulados): 18
+    Número de reinícios feitos: 4
+------------------------------------------------------------
+Execução 47:
+    Estado inicial do tabuleiro:
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  x  .  x  .  . 
+         .  x  .  .  .  .  .  . 
+         x  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 10.7169 ms
+    Passos totais (acumulados): 40
+    Número de reinícios feitos: 11
+------------------------------------------------------------
+Execução 48:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  . 
+         x  .  .  x  .  .  x  . 
+
+    Estado final do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  x  .  .  . 
+         .  .  x  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  x 
+         .  x  .  .  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 2.1061 ms
+    Passos totais (acumulados): 8
+    Número de reinícios feitos: 2
+------------------------------------------------------------
+Execução 49:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         x  .  .  .  x  .  x  . 
+         .  x  .  x  .  x  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  x 
+         x  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+    Solução encontrada? Sim
+    Tempo de execução: 9.0515 ms
+    Passos totais (acumulados): 33
+    Número de reinícios feitos: 9
+------------------------------------------------------------
+Execução 50:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  x 
+         .  x  .  .  x  .  .  . 
+         .  .  .  x  .  x  x  . 
+         .  .  .  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  x  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  x  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 10.3389 ms
+    Passos totais (acumulados): 38
+    Número de reinícios feitos: 11
+------------------------------------------------------------
+Execução 51:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  . 
+         .  x  .  x  .  .  x  . 
+         .  .  .  .  .  .  .  . 
+         x  .  x  .  .  .  .  . 
+         .  .  .  .  x  .  .  x 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  x  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 6.3258 ms
+    Passos totais (acumulados): 24
+    Número de reinícios feitos: 6
+------------------------------------------------------------
+Execução 52:
+    Estado inicial do tabuleiro:
+         .  x  x  x  .  .  .  x 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         x  .  .  .  .  x  x  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+    Solução encontrada? Sim
+    Tempo de execução: 2.7110 ms
+    Passos totais (acumulados): 11
+    Número de reinícios feitos: 2
+------------------------------------------------------------
+Execução 53:
+    Estado inicial do tabuleiro:
+         x  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  x  . 
+         .  .  .  .  x  x  .  . 
+         .  x  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  .  x  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  x  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 10.2257 ms
+    Passos totais (acumulados): 38
+    Número de reinícios feitos: 11
+------------------------------------------------------------
+Execução 54:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  x  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  x  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+    Solução encontrada? Sim
+    Tempo de execução: 4.2140 ms
+    Passos totais (acumulados): 16
+    Número de reinícios feitos: 4
+------------------------------------------------------------
+Execução 55:
+    Estado inicial do tabuleiro:
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  x 
+         x  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  x 
+         x  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 4.7597 ms
+    Passos totais (acumulados): 17
+    Número de reinícios feitos: 5
+------------------------------------------------------------
+Execução 56:
+    Estado inicial do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         x  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  x  x  .  . 
+         .  .  .  .  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+    Solução encontrada? Sim
+    Tempo de execução: 2.3974 ms
+    Passos totais (acumulados): 9
+    Número de reinícios feitos: 2
+------------------------------------------------------------
+Execução 57:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  x 
+         .  .  .  .  .  .  .  . 
+         x  .  x  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  x  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  x  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 8.3719 ms
+    Passos totais (acumulados): 31
+    Número de reinícios feitos: 9
+------------------------------------------------------------
+Execução 58:
+    Estado inicial do tabuleiro:
+         .  x  .  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  x 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  x  x  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  .  x  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  x  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 6.0497 ms
+    Passos totais (acumulados): 23
+    Número de reinícios feitos: 6
+------------------------------------------------------------
+Execução 59:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  x  x  . 
+         .  x  .  x  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  x 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 10.4059 ms
+    Passos totais (acumulados): 38
+    Número de reinícios feitos: 11
+------------------------------------------------------------
+Execução 60:
+    Estado inicial do tabuleiro:
+         .  x  .  .  .  x  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  x 
+
+    Estado final do tabuleiro:
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 1.4710 ms
+    Passos totais (acumulados): 6
+    Número de reinícios feitos: 1
+------------------------------------------------------------
+Execução 61:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         x  .  .  x  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  . 
+         .  x  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  .  x  . 
+
+    Estado final do tabuleiro:
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  x  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  x  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 6.1958 ms
+    Passos totais (acumulados): 22
+    Número de reinícios feitos: 7
+------------------------------------------------------------
+Execução 62:
+    Estado inicial do tabuleiro:
+         .  .  .  x  .  .  .  x 
+         .  .  x  .  x  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         x  .  .  .  .  .  x  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  x  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+    Solução encontrada? Sim
+    Tempo de execução: 3.7410 ms
+    Passos totais (acumulados): 15
+    Número de reinícios feitos: 3
+------------------------------------------------------------
+Execução 63:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         x  .  .  x  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  x  x  .  .  .  x  x 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  x 
+         x  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+    Solução encontrada? Sim
+    Tempo de execução: 2.0976 ms
+    Passos totais (acumulados): 9
+    Número de reinícios feitos: 1
+------------------------------------------------------------
+Execução 64:
+    Estado inicial do tabuleiro:
+         .  x  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  x  x  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  x 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         x  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  x  .  . 
+         .  .  .  x  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 4.7826 ms
+    Passos totais (acumulados): 19
+    Número de reinícios feitos: 4
+------------------------------------------------------------
+Execução 65:
+    Estado inicial do tabuleiro:
+         .  .  x  .  x  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         x  .  .  .  .  x  .  . 
+         .  x  .  .  .  .  x  . 
+         .  .  .  x  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  x  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 8.9994 ms
+    Passos totais (acumulados): 32
+    Número de reinícios feitos: 10
+------------------------------------------------------------
+Execução 66:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  x  x  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  x  .  x  .  .  .  . 
+         .  .  x  .  .  .  .  x 
+
+    Estado final do tabuleiro:
+         .  .  x  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  x  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 6.2622 ms
+    Passos totais (acumulados): 22
+    Número de reinícios feitos: 7
+------------------------------------------------------------
+Execução 67:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  x  x  .  . 
+         .  x  .  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+
+    Estado final do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  x  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 2.5930 ms
+    Passos totais (acumulados): 9
+    Número de reinícios feitos: 3
+------------------------------------------------------------
+Execução 68:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  x  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  x  x  .  x  .  .  . 
+         .  .  .  .  .  .  .  x 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  x 
+         x  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+    Solução encontrada? Sim
+    Tempo de execução: 3.7820 ms
+    Passos totais (acumulados): 15
+    Número de reinícios feitos: 3
+------------------------------------------------------------
+Execução 69:
+    Estado inicial do tabuleiro:
+         x  .  x  .  x  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  x 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  x  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  x  .  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 10.6443 ms
+    Passos totais (acumulados): 36
+    Número de reinícios feitos: 11
+------------------------------------------------------------
+Execução 70:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  x 
+         x  .  x  .  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 2.3112 ms
+    Passos totais (acumulados): 11
+    Número de reinícios feitos: 2
+------------------------------------------------------------
+Execução 71:
+    Estado inicial do tabuleiro:
+         .  .  x  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  x  .  x  .  . 
+         .  .  .  .  .  .  .  x 
+         .  x  .  .  x  .  x  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 9.3241 ms
+    Passos totais (acumulados): 39
+    Número de reinícios feitos: 13
+------------------------------------------------------------
+Execução 72:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         .  .  x  .  x  x  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  x  . 
+         .  x  .  .  .  .  .  x 
+         x  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  x  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  x  .  .  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 38.9491 ms
+    Passos totais (acumulados): 148
+    Número de reinícios feitos: 51
+------------------------------------------------------------
+Execução 73:
+    Estado inicial do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  x  x  x  x 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  x 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 3.2603 ms
+    Passos totais (acumulados): 13
+    Número de reinícios feitos: 3
+------------------------------------------------------------
+Execução 74:
+    Estado inicial do tabuleiro:
+         x  .  .  .  .  .  .  x 
+         .  x  x  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  x 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 14.4734 ms
+    Passos totais (acumulados): 55
+    Número de reinícios feitos: 15
+------------------------------------------------------------
+Execução 75:
+    Estado inicial do tabuleiro:
+         .  .  x  .  .  .  .  x 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         x  .  .  x  .  .  x  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  x  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+    Solução encontrada? Sim
+    Tempo de execução: 2.5955 ms
+    Passos totais (acumulados): 10
+    Número de reinícios feitos: 2
+------------------------------------------------------------
+Execução 76:
+    Estado inicial do tabuleiro:
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  x  . 
+         .  .  .  .  .  .  .  x 
+         x  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  x 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  x  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 0.6146 ms
+    Passos totais (acumulados): 3
+    Número de reinícios feitos: 0
+------------------------------------------------------------
+Execução 77:
+    Estado inicial do tabuleiro:
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  x  .  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+
+    Estado final do tabuleiro:
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  x  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  x  .  .  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 1.0036 ms
+    Passos totais (acumulados): 4
+    Número de reinícios feitos: 1
+------------------------------------------------------------
+Execução 78:
+    Estado inicial do tabuleiro:
+         .  .  x  .  x  .  .  x 
+         .  .  .  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  x  .  .  .  x  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  x 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 2.5707 ms
+    Passos totais (acumulados): 11
+    Número de reinícios feitos: 2
+------------------------------------------------------------
+Execução 79:
+    Estado inicial do tabuleiro:
+         .  .  .  .  x  .  .  x 
+         .  .  .  .  .  .  x  . 
+         .  .  x  .  .  .  .  . 
+         .  x  .  .  .  x  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  x  .  . 
+         .  .  .  x  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 16.7121 ms
+    Passos totais (acumulados): 64
+    Número de reinícios feitos: 18
+------------------------------------------------------------
+Execução 80:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         x  .  .  x  .  .  .  x 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  . 
+         .  x  x  .  .  .  x  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 8.1098 ms
+    Passos totais (acumulados): 30
+    Número de reinícios feitos: 8
+------------------------------------------------------------
+Execução 81:
+    Estado inicial do tabuleiro:
+         .  x  .  .  .  .  x  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  x  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  x 
+         .  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 5.8325 ms
+    Passos totais (acumulados): 23
+    Número de reinícios feitos: 6
+------------------------------------------------------------
+Execução 82:
+    Estado inicial do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  x  .  .  . 
+         x  x  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 1.0258 ms
+    Passos totais (acumulados): 5
+    Número de reinícios feitos: 0
+------------------------------------------------------------
+Execução 83:
+    Estado inicial do tabuleiro:
+         x  .  .  .  .  .  .  x 
+         .  .  .  .  x  x  .  . 
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  x  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  .  x  . 
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  x 
+         x  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 2.0006 ms
+    Passos totais (acumulados): 9
+    Número de reinícios feitos: 1
+------------------------------------------------------------
+Execução 84:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  .  x  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  x  .  x  .  .  x 
+         x  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  x  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 1.0238 ms
+    Passos totais (acumulados): 5
+    Número de reinícios feitos: 0
+------------------------------------------------------------
+Execução 85:
+    Estado inicial do tabuleiro:
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  x  x  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  x  .  .  .  .  x  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  x  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  x  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 2.8873 ms
+    Passos totais (acumulados): 12
+    Número de reinícios feitos: 2
+------------------------------------------------------------
+Execução 86:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  x  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  x  . 
+         .  x  .  .  .  .  .  x 
+         .  .  .  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  x  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 9.2642 ms
+    Passos totais (acumulados): 35
+    Número de reinícios feitos: 9
+------------------------------------------------------------
+Execução 87:
+    Estado inicial do tabuleiro:
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  x 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  x  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  x  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 4.8080 ms
+    Passos totais (acumulados): 18
+    Número de reinícios feitos: 5
+------------------------------------------------------------
+Execução 88:
+    Estado inicial do tabuleiro:
+         x  .  .  .  .  .  x  . 
+         .  .  x  .  x  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  x  .  x  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  .  x  . 
+         .  .  x  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  x  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 0.6475 ms
+    Passos totais (acumulados): 3
+    Número de reinícios feitos: 0
+------------------------------------------------------------
+Execução 89:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         .  .  x  .  .  x  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  x  .  .  .  .  .  . 
+         x  .  .  .  x  .  .  x 
+
+    Estado final do tabuleiro:
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  x 
+         x  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  x  .  .  . 
+         .  x  .  .  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 3.0966 ms
+    Passos totais (acumulados): 11
+    Número de reinícios feitos: 2
+------------------------------------------------------------
+Execução 90:
+    Estado inicial do tabuleiro:
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  x  .  x  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         x  .  x  .  x  .  x  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  x 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 4.1711 ms
+    Passos totais (acumulados): 16
+    Número de reinícios feitos: 4
+------------------------------------------------------------
+Execução 91:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  x 
+         x  .  .  .  .  x  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  x  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 2.2817 ms
+    Passos totais (acumulados): 10
+    Número de reinícios feitos: 2
+------------------------------------------------------------
+Execução 92:
+    Estado inicial do tabuleiro:
+         .  .  .  .  x  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  x  .  .  .  x 
+         .  .  .  .  .  .  .  . 
+         .  x  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  x  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  x  .  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 18.2635 ms
+    Passos totais (acumulados): 74
+    Número de reinícios feitos: 24
+------------------------------------------------------------
+Execução 93:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  x 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  . 
+         x  x  x  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+
+    Estado final do tabuleiro:
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  x  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 5.5477 ms
+    Passos totais (acumulados): 21
+    Número de reinícios feitos: 7
+------------------------------------------------------------
+Execução 94:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  x  .  .  x  .  . 
+         .  .  .  .  .  .  x  x 
+         x  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  x  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 2.7718 ms
+    Passos totais (acumulados): 11
+    Número de reinícios feitos: 3
+------------------------------------------------------------
+Execução 95:
+    Estado inicial do tabuleiro:
+         .  .  x  x  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  x 
+         .  x  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 2.6035 ms
+    Passos totais (acumulados): 11
+    Número de reinícios feitos: 2
+------------------------------------------------------------
+Execução 96:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         x  .  .  .  x  x  .  x 
+         .  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  x  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  x  .  . 
+         .  .  x  .  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 2.4211 ms
+    Passos totais (acumulados): 9
+    Número de reinícios feitos: 2
+------------------------------------------------------------
+Execução 97:
+    Estado inicial do tabuleiro:
+         .  x  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  x  .  x  .  .  . 
+         .  .  .  .  .  .  x  x 
+
+    Estado final do tabuleiro:
+         .  .  .  .  x  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  x  .  . 
+         x  .  .  .  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 5.1188 ms
+    Passos totais (acumulados): 20
+    Número de reinícios feitos: 5
+------------------------------------------------------------
+Execução 98:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         .  x  .  .  .  .  .  x 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         x  .  .  .  x  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  x  x  . 
+         .  .  x  .  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  x  .  . 
+         .  .  .  .  .  .  .  x 
+         x  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  .  x  .  .  . 
+         .  x  .  .  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 19.0237 ms
+    Passos totais (acumulados): 69
+    Número de reinícios feitos: 23
+------------------------------------------------------------
+Execução 99:
+    Estado inicial do tabuleiro:
+         .  .  x  .  x  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  x  x  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         x  .  .  x  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  x  .  .  . 
+         .  .  x  .  .  .  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  .  .  .  x  .  . 
+         .  .  .  x  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 6.3750 ms
+    Passos totais (acumulados): 25
+    Número de reinícios feitos: 6
+------------------------------------------------------------
+Execução 100:
+    Estado inicial do tabuleiro:
+         .  .  .  .  .  .  .  . 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  .  .  .  .  .  .  . 
+         x  .  .  .  .  x  x  x 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  . 
+         .  .  .  x  .  .  .  . 
+
+    Estado final do tabuleiro:
+         .  .  .  .  .  x  .  . 
+         x  .  .  .  .  .  .  . 
+         .  .  .  .  x  .  .  . 
+         .  x  .  .  .  .  .  . 
+         .  .  .  .  .  .  .  x 
+         .  .  x  .  .  .  .  . 
+         .  .  .  .  .  .  x  . 
+         .  .  .  x  .  .  .  . 
+    Solução encontrada? Sim
+    Tempo de execução: 0.9312 ms
+    Passos totais (acumulados): 5
+    Número de reinícios feitos: 0
+------------------------------------------------------------

@@ -20,7 +20,7 @@ Para instruções de execução, análise de resultados e detalhes de implementa
 
 * ### [➡️ Trabalho 1: Busca no Labirinto](https://github.com/edualmeidahr/Trabalho1_IA/tree/main/Trabalho1)
 
-* ### [➡️ Trabalho 2: 8 Rainhas com Hill Climbing](./trabalho2/README.md)
+* ### [➡️ Trabalho 2: 8 Rainhas com Hill Climbing](https://github.com/edualmeidahr/Trabalhos_IA/tree/main/Trabalho2)
 
 ---
 
