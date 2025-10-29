@@ -11,7 +11,7 @@ O projeto é dividido em subdiretórios, onde cada pasta representa um trabalho 
 
 O repositório está organizado da seguinte forma:
 
-* trabalho1/`: Implementação e análise de algoritmos de **Busca Cega e Informada** (BFS, DFS, A*, Gulosa) aplicados ao problema de resolução de labirintos.
+* `trabalho1/`: Implementação e análise de algoritmos de **Busca Cega e Informada** (BFS, DFS, A*, Gulosa) aplicados ao problema de resolução de labirintos.
 * `trabalho2/`: Implementação e análise de algoritmos de Otimização Local (**Hill Climbing**) aplicados ao problema das 8 Rainhas.
 
 ## Detalhamento dos Projetos

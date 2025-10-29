@@ -28,6 +28,43 @@ git clone git@github.com:edualmeidahr/Trabalho2_IA.git
 ## 🚀 Requisitos
 
 - **Python 3.10** (ou superior)
+* **Matplotlib** (única dependência externa, usada para gerar os gráficos)
+
+
+
+
+## ⚙️ Instalação das Dependências
+
+Para facilitar, você pode usar os scripts de instalação fornecidos ou rodar o comando manualmente. Para isso, é preciso que esteja dentro da pasta do projeto (`Trabalho2`).
+
+### Opção 1: Usando os Scripts de Instalação
+
+#### 🐧 Em Linux / macOS
+
+1.  Primeiro, dê permissão de execução ao script:
+    ```bash
+    chmod +x install_deps.sh
+    ```
+2.  Depois, execute o script:
+    ```bash
+    ./install_deps.sh
+    ```
+
+#### 🪟 Em Windows
+
+1.  Apenas execute o script `install_deps.bat` clicando duas vezes nele.
+2.  (Alternativa) Se preferir, execute-o pelo seu terminal (CMD ou PowerShell):
+    ```bash
+    .\install_deps.bat
+    ```
+
+### Opção 2: Instalação Manual (via Pip)
+
+Se preferir, você pode instalar a biblioteca manualmente usando o `pip` (gerenciador de pacotes do Python):
+
+```bash
+pip install -r requirements.txt
+```
 
 
 
@@ -49,7 +86,10 @@ Trabalho2_IA/
 │   └── hill_climbing.py
 │
 ├── .gitignore
+├── install_deps.bat
+├── install_deps.sh
 ├── README.md
+├── requirements.txt
 └── run_search.py
 ```
 
